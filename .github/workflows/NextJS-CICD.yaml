@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v6
       
       - name: Run Docker Compose
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Install dependencies
         run: docker compose exec app npm install
